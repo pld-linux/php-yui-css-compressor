@@ -1,15 +1,17 @@
 # TODO
 # - gui
 %define		php_min_version 5.0.0
+%define		ver	2.4.8
+%define		subver 3
 %include	/usr/lib/rpm/macros.php
 Summary:	A PHP port of the YUI CSS compressor
 Name:		php-yui-css-compressor
-Version:	2.4.8
+Version:	%{ver}.%{subver}
 Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/archive/v%{version}-2/%{name}-%{version}.tar.gz
-# Source0-md5:	edc35670fab95ac0d08a80113b2c31a2
+Source0:	https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/archive/v%{ver}-%{subver}/%{name}-%{version}.tar.gz
+# Source0-md5:	0bcd5e0e43f33d29ecdfc6d18aa11dfc
 URL:		https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.553
@@ -25,7 +27,7 @@ This port is based on version 2.4.8 (Jun 12, 2013) of the YUI
 compressor.
 
 %prep
-%setup -q -n YUI-CSS-compressor-PHP-port-%{version}-2
+%setup -q -n YUI-CSS-compressor-PHP-port-%{ver}-%{subver}
 
 %install
 rm -rf $RPM_BUILD_ROOT
