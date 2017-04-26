@@ -1,0 +1,20 @@
+--- YUI-CSS-compressor-PHP-port-2.4.8-p10/./cssmin.php~	2017-04-04 17:38:03.000000000 +0300
++++ YUI-CSS-compressor-PHP-port-2.4.8-p10/./cssmin.php	2017-04-26 12:23:21.253149342 +0300
+@@ -703,7 +703,7 @@
+     {
+         $patterns = array();
+         $replacements = array();
+-        $longNamedColors = include 'data/named-to-hex-color-map.php';
++        $longNamedColors = include __DIR__ '/data/named-to-hex-color-map.php';
+         $propertiesWithColors = array(
+             'color',
+             'background(?:-color)?',
+@@ -750,7 +750,7 @@
+         $pattern =
+             '/(=\s*?["\']?)?#([0-9a-f])([0-9a-f])([0-9a-f])([0-9a-f])([0-9a-f])([0-9a-f])(\}|[^0-9a-f{][^{]*?\})/iS';
+         $_index = $index = $lastIndex = $offset = 0;
+-        $longHexColors = include 'data/hex-to-named-color-map.php';
++        $longHexColors = include __DIR__ . '/data/hex-to-named-color-map.php';
+         $sb = array();
+ 
+         while (preg_match($pattern, $css, $m, 0, $offset)) {
