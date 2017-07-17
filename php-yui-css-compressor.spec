@@ -7,7 +7,7 @@
 Summary:	A PHP port of the YUI CSS compressor
 Name:		php-yui-css-compressor
 Version:	%{ver}.%{subver}
-Release:	2
+Release:	3
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/archive/v%{ver}-p%{subver}/%{name}-%{version}.tar.gz
@@ -34,8 +34,8 @@ compressor.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_data_dir}/cssmin
-ln -s cssmin/CSSmin.php $RPM_BUILD_ROOT%{php_data_dir}/cssmin.php
-ln -s cssmin/CSSmin.php $RPM_BUILD_ROOT%{php_data_dir}/CSSmin.php
+ln -s cssmin/cssmin.php $RPM_BUILD_ROOT%{php_data_dir}/cssmin.php
+ln -s cssmin/cssmin.php $RPM_BUILD_ROOT%{php_data_dir}/CSSmin.php
 cp -a cssmin.php data $RPM_BUILD_ROOT%{php_data_dir}/cssmin
 
 %clean
