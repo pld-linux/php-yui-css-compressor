@@ -5,7 +5,7 @@
          $patterns = array();
          $replacements = array();
 -        $longNamedColors = include 'data/named-to-hex-color-map.php';
-+        $longNamedColors = include __DIR__ '/data/named-to-hex-color-map.php';
++        $longNamedColors = include __DIR__ . '/data/named-to-hex-color-map.php';
          $propertiesWithColors = array(
              'color',
              'background(?:-color)?',

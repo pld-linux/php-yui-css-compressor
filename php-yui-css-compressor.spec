@@ -7,7 +7,7 @@
 Summary:	A PHP port of the YUI CSS compressor
 Name:		php-yui-css-compressor
 Version:	%{ver}.%{subver}
-Release:	3
+Release:	4
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/archive/v%{ver}-p%{subver}/%{name}-%{version}.tar.gz
