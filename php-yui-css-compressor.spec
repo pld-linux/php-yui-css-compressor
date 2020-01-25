@@ -3,7 +3,6 @@
 %define		php_min_version 5.0.0
 %define		ver	2.4.8
 %define		subver 10
-%include	/usr/lib/rpm/macros.php
 Summary:	A PHP port of the YUI CSS compressor
 Name:		php-yui-css-compressor
 Version:	%{ver}.%{subver}
